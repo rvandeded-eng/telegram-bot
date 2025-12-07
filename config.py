@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 import os
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
