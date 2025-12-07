@@ -1,7 +1,6 @@
 services:
   - type: web
-    name: discord-bot
-    env: python
-    runtime: python-3.11
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    name: tg-ds-forward-bot
+    env: docker
+    plan: free
+    dockerCommand: "python bot.py"
